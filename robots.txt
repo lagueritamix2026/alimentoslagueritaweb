@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://AlimentosLaguerita.github.io/sitemap.xml
+Sitemap: https://lagueritamix2026.github.io/alimentoslagueritaweb/sitemap.xml

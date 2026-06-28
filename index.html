@@ -1,0 +1,272 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Alimentos la Güerita | Catálogo</title>
+<style>
+:root{--green:#006847;--red:#ce1126;--yellow:#fff159;--blue:#3483fa;--bg:#ebebeb;--card:#fff;--text:#333;--muted:#666;--line:#e6e6e6;--shadow:0 1px 2px rgba(0,0,0,.12),0 8px 24px rgba(0,0,0,.05)}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);font-family:Inter,Segoe UI,Arial,sans-serif;color:var(--text);-webkit-user-select:none;user-select:none}img{display:block;max-width:100%;pointer-events:none;-webkit-user-drag:none}button,input,textarea,select{font:inherit}button{cursor:pointer}a{text-decoration:none;color:inherit}.topband{background:linear-gradient(90deg,var(--green) 0 33%,#fff 33% 66%,var(--red) 66% 100%);padding:10px 14px;text-align:center;font-weight:900;font-size:13px}.topband span{background:rgba(255,255,255,.94);padding:8px 14px;border-radius:999px;display:inline-block;box-shadow:0 1px 4px rgba(0,0,0,.12)}.header{position:sticky;top:0;z-index:90;background:var(--yellow);box-shadow:0 1px 0 rgba(0,0,0,.1)}.headerIn{max-width:1400px;margin:auto;padding:12px 18px;display:grid;grid-template-columns:260px 1fr auto;gap:16px;align-items:center}.brand{display:flex;gap:12px;align-items:center;font-weight:900}.brandBadge{width:46px;height:46px;border-radius:12px;background:linear-gradient(135deg,var(--green),#fff 50%,var(--red));border:2px solid rgba(0,0,0,.08)}.brand small{display:block;font-size:11px;color:#555;font-weight:700}.search{display:flex;align-items:center;background:#fff;border-radius:10px;padding:0 14px;box-shadow:inset 0 0 0 1px rgba(0,0,0,.1)}.search input{border:0;outline:none;background:transparent;width:100%;padding:13px 8px}.actions{display:flex;gap:10px}.btn{border:0;border-radius:10px;padding:12px 16px;font-weight:800;display:inline-flex;align-items:center;gap:8px;justify-content:center}.btn.wh{background:#fff}.btn.green{background:var(--green);color:#fff}.btn.blue{background:var(--blue);color:#fff}.btn.light{background:#f5f5f5;color:#333}.subnav{background:#fff;border-bottom:1px solid rgba(0,0,0,.08)}.subnavIn{max-width:1400px;margin:auto;padding:10px 18px;display:flex;gap:10px;flex-wrap:wrap;align-items:center}.chip{border:1px solid #ddd;background:#fff;border-radius:999px;padding:10px 14px;font-weight:800;color:#555}.chip.active{background:var(--green);color:#fff;border-color:var(--green)}.hero{max-width:1400px;margin:18px auto;padding:0 18px;display:grid;grid-template-columns:1.15fr .85fr;gap:16px}.heroBox{background:#fff;border-radius:16px;box-shadow:var(--shadow);padding:26px;display:grid;grid-template-columns:1.1fr .9fr;gap:16px;align-items:center}.heroBox h1{margin:0 0 10px;font-size:40px;line-height:1.02;letter-spacing:-1.2px}.heroBox h1 span{color:var(--green)}.heroBox p{margin:0 0 18px;color:#555;line-height:1.6;font-size:17px}.heroPill{display:inline-flex;background:#eaf5ef;color:var(--green);border-radius:999px;padding:8px 12px;font-size:12px;font-weight:900;margin-bottom:12px}.heroImg{height:100%;min-height:340px;border-radius:14px;background:linear-gradient(180deg,#fafafa,#f3f3f3);display:grid;place-items:center;overflow:hidden}.heroImg img{max-height:92%;object-fit:contain}.heroSide{display:grid;gap:16px}.infoCard{background:#fff;border-radius:16px;box-shadow:var(--shadow);padding:18px}.infoCard h3{margin:0 0 8px;font-size:20px}.infoCard p{margin:0;color:#666;line-height:1.55}.infoList{display:grid;gap:10px;margin-top:12px}.infoItem{display:flex;gap:10px;align-items:flex-start}.infoIcon{width:34px;height:34px;border-radius:50%;background:#eaf5ef;color:var(--green);display:grid;place-items:center;font-weight:900}.main{max-width:1400px;margin:0 auto 28px;padding:0 18px;display:grid;grid-template-columns:260px 1fr 350px;gap:16px}.leftPanel,.catalogWrap,.cartPreview{background:#fff;border-radius:16px;box-shadow:var(--shadow)}.leftPanel{padding:18px;height:max-content;position:sticky;top:92px}.leftPanel h3,.catalogHead h2,.cartHead h3{margin:0}.filterHelp{color:#666;font-size:14px;line-height:1.55;margin:10px 0 16px}.catList{display:grid;gap:10px}.catBtn{text-align:left;border:1px solid #ddd;background:#f7f7f7;border-radius:12px;padding:12px 14px;font-weight:900;display:flex;justify-content:space-between;align-items:center}.catBtn.active{background:var(--green);color:#fff;border-color:var(--green)}.note{margin-top:16px;background:#fff8d5;border:1px solid #f0e1a0;border-radius:12px;padding:12px;color:#6d5a00;font-size:13px;line-height:1.5}.catalogWrap{padding:18px}.catalogHead{display:flex;justify-content:space-between;gap:12px;align-items:center;flex-wrap:wrap;margin-bottom:14px}.catalogHead p{margin:6px 0 0;color:#666}.selectRow{display:flex;gap:10px;align-items:center}.selectRow select{border:1px solid #ddd;border-radius:10px;padding:11px 12px;background:#fff}.empty{border:2px dashed #ddd;border-radius:16px;padding:42px 18px;text-align:center;background:#fafafa;color:#666}.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}.card{background:#fff;border:1px solid #eee;border-radius:16px;overflow:hidden;transition:.18s;cursor:pointer;display:flex;flex-direction:column}.card:hover{transform:translateY(-3px);box-shadow:0 10px 24px rgba(0,0,0,.08)}.imgWrap,.modalMedia{position:relative;overflow:hidden;isolation:isolate}.imgWrap{background:#fff;height:240px;display:grid;place-items:center;padding:14px}.imgWrap img,.modalMedia img{position:relative;z-index:0;object-fit:contain}.imgWrap img{max-height:100%}.imgWrap::after,.modalMedia::after{content:"ALIMENTOS LA GUERITA";position:absolute;inset:0;display:grid;place-items:center;font-size:clamp(22px,3vw,34px);font-weight:900;letter-spacing:2px;color:rgba(255,255,255,.22);text-shadow:0 2px 8px rgba(0,0,0,.32);transform:rotate(-28deg);pointer-events:none;z-index:1;white-space:nowrap}.wmFlag{position:absolute;left:10px;top:10px;z-index:2;background:rgba(0,0,0,.78);color:#fff;padding:6px 8px;border-radius:999px;font-size:11px;font-weight:800}.badges{position:absolute;right:10px;top:10px;z-index:2;display:grid;gap:6px}.badge{background:#fff159;border-radius:999px;padding:6px 8px;font-size:10px;font-weight:900;box-shadow:0 1px 3px rgba(0,0,0,.12)}.cardBody{padding:14px;display:grid;gap:8px;flex:1}.brandLine{color:#666;font-size:12px;font-weight:800;text-transform:uppercase}.title{font-size:16px;line-height:1.35;font-weight:800;min-height:44px}.price{font-size:28px;font-weight:300}.sub{color:#666;font-size:13px;line-height:1.45}.miniActions{display:flex;gap:8px;flex-wrap:wrap;margin-top:4px}.pill{background:#f6f6f6;border-radius:999px;padding:7px 10px;font-size:12px;font-weight:700}.cartPreview{padding:18px;height:max-content;position:sticky;top:92px}.cartHead{display:flex;justify-content:space-between;align-items:center;margin-bottom:12px}.cartItems{display:grid;gap:10px;max-height:420px;overflow:auto}.cartRow{display:grid;grid-template-columns:56px 1fr auto;gap:10px;align-items:center;padding:8px;border:1px solid #eee;border-radius:12px}.cartRow img{width:56px;height:56px;object-fit:contain;background:#fff}.qtyBox{display:flex;gap:8px;align-items:center;margin-top:6px}.qtyBtn{width:28px;height:28px;border-radius:8px;border:1px solid #ddd;background:#fff;font-weight:900}.cartSummary{border-top:1px solid #eee;margin-top:12px;padding-top:12px;display:grid;gap:8px}.sumLine{display:flex;justify-content:space-between;gap:10px}.waFull{width:100%}.about{max-width:1400px;margin:0 auto 34px;padding:0 18px}.aboutBox{background:#fff;border-radius:16px;box-shadow:var(--shadow);padding:22px;display:grid;grid-template-columns:1fr 1fr;gap:16px}.aboutBox h3{margin:0 0 10px;font-size:24px}.aboutBox p{margin:0;color:#555;line-height:1.65}.miniGrid{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-top:14px}.mini{background:#f7f7f7;border-radius:12px;padding:12px}.field{width:100%;border:1px solid #ddd;border-radius:10px;padding:12px 13px;margin-top:10px}.floating{position:fixed;right:18px;bottom:18px;width:58px;height:58px;border-radius:50%;background:#25d366;color:#fff;display:grid;place-items:center;font-size:28px;box-shadow:0 10px 28px rgba(0,0,0,.2);z-index:90}.modal{position:fixed;inset:0;z-index:120;pointer-events:none}.modal.open{pointer-events:auto}.overlay{position:absolute;inset:0;background:rgba(0,0,0,.55);opacity:0;transition:.18s}.modal.open .overlay{opacity:1}.modalCard{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%) scale(.96);opacity:0;transition:.18s;background:#fff;border-radius:18px;width:min(1100px,96vw);max-height:92vh;overflow:auto}.modal.open .modalCard{transform:translate(-50%,-50%) scale(1);opacity:1}.modalGrid{display:grid;grid-template-columns:1fr 1fr}.modalMedia{padding:24px;display:grid;place-items:center;background:#fff}.modalMedia img{max-height:72vh}.modalInfo{padding:24px;border-left:1px solid #eee}.modalBrand{font-size:12px;color:#666;font-weight:900;text-transform:uppercase}.modalInfo h4{margin:8px 0 10px;font-size:30px;line-height:1.15}.priceBig{font-size:42px;font-weight:300;margin:8px 0}.check{display:inline-flex;gap:8px;align-items:center;background:#eaf5ef;color:var(--green);border-radius:999px;padding:8px 12px;font-size:12px;font-weight:800}.specs{display:grid;gap:10px;margin-top:14px}.spec{display:grid;grid-template-columns:160px 1fr;gap:12px;padding-bottom:10px;border-bottom:1px solid #f0f0f0;font-size:14px}.spec b{color:#333}.modalActions{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:16px}.closeBtn{position:sticky;top:8px;float:right;margin:10px 10px 0 0;width:40px;height:40px;border-radius:50%;border:0;background:#f5f5f5;font-size:24px;font-weight:900;z-index:2}.toast{position:fixed;left:50%;bottom:30px;transform:translateX(-50%);background:#222;color:#fff;padding:12px 16px;border-radius:999px;opacity:0;pointer-events:none;transition:.18s;z-index:130}.toast.show{opacity:1}@media(max-width:1200px){.main{grid-template-columns:1fr}.leftPanel,.cartPreview{position:static}.grid{grid-template-columns:repeat(3,1fr)}.aboutBox{grid-template-columns:1fr}}@media(max-width:900px){.hero{grid-template-columns:1fr}.heroBox{grid-template-columns:1fr}.headerIn{grid-template-columns:1fr}.grid{grid-template-columns:repeat(2,1fr)}.modalGrid{grid-template-columns:1fr}.modalInfo{border-left:0;border-top:1px solid #eee}}@media(max-width:560px){.grid{grid-template-columns:1fr}.miniGrid{grid-template-columns:1fr}.actions{flex-wrap:wrap}}
+</style>
+</head>
+<body>
+<div class="topband"><span>🇲🇽 Alimentos la Güerita • Catálogo web oficial • WhatsApp 322 427 4547</span></div>
+<header class="header"><div class="headerIn"><a class="brand" href="#"><div class="brandBadge"></div><div>Alimentos la Güerita<small>Tienda mayorista tipo marketplace</small></div></a><div class="search"><span>🔎</span><input id="searchInput" placeholder="Buscar dentro de la categoría seleccionada"></div><div class="actions"><button class="btn wh" onclick="openWhatsAppGeneral()">WhatsApp</button><button class="btn green" onclick="scrollCatalog()">Ver catálogo</button></div></div></header>
+<nav class="subnav"><div class="subnavIn" id="topCategoryChips"></div></nav>
+<section class="hero"><div class="heroBox"><div><div class="heroPill">Catálogo mayorista</div><h1>Explora el catálogo por <span>tipo de producto</span></h1><p>Selecciona una categoría y visualiza solo los productos de ese tipo. Al hacer clic en cualquier producto se abre una vista ampliada estilo marketplace, con detalles y opción de cotización por WhatsApp.</p><button class="btn blue" onclick="scrollCatalog()">Ir al catálogo</button><button class="btn light" onclick="openWhatsAppGeneral()">Solicitar lista por WhatsApp</button></div><div class="heroImg"><img id="heroImage" alt="Producto"></div></div><div class="heroSide"><div class="infoCard"><h3>Atención comercial</h3><p>Explora el portafolio por categoría y solicita tu cotización directamente por WhatsApp.</p><div class="infoList"><div class="infoItem"><div class="infoIcon">✓</div><div><b>Catálogo por categorías</b><div class="sub">Encuentra salsas, dulces, pulpas, paletas y más.</div></div></div><div class="infoItem"><div class="infoIcon">🛡</div><div><b>Portafolio visual</b><div class="sub">Consulta imágenes y referencias de producto en una sola vista.</div></div></div><div class="infoItem"><div class="infoIcon">✆</div><div><b>Atención directa</b><div class="sub">WhatsApp 322 427 4547</div></div></div></div></div></div></section>
+<section class="main" id="catalogSection"><aside class="leftPanel"><h3>Tipos de producto</h3><div class="filterHelp">La tienda solo muestra los productos de la categoría que selecciones.</div><div class="catList" id="catList"></div><div class="note">Consulta disponibilidad, precios y pedidos directamente por WhatsApp.</div></aside><div class="catalogWrap"><div class="catalogHead"><div><h2 id="catTitle">Selecciona una categoría</h2><p id="catDesc">Cuando elijas un tipo de producto, aquí se cargarán sus productos.</p></div><div class="selectRow"><select id="sortSelect"><option value="name">Ordenar: nombre</option><option value="priceAsc">Precio: menor a mayor</option><option value="priceDesc">Precio: mayor a menor</option></select></div></div><div id="catalogArea"></div></div><aside class="cartPreview"><div class="cartHead"><h3>Carrito</h3><button class="btn wh" style="padding:8px 12px" onclick="clearCart()">Vaciar</button></div><div class="cartItems" id="cartItems"></div><div class="cartSummary"><div class="sumLine"><span>Referencias</span><b id="sumRefs">0</b></div><div class="sumLine"><span>Subtotal</span><b id="sumTotal">$0</b></div><input class="field" id="customerName" placeholder="Tu nombre"><textarea class="field" id="customerNotes" rows="3" placeholder="Notas adicionales"></textarea><button class="btn green waFull" onclick="sendCart()">Enviar cotización por WhatsApp</button></div></aside></section>
+<section class="about"><div class="aboutBox"><div><h3>Sobre nosotros</h3><p><b>Alimentos la Güerita</b> distribuye productos mexicanos autorizados para venta en Colombia. Este catálogo web está diseñado para mostrar el portafolio, clasificarlo por tipo de producto y facilitar la cotización con clientes.</p><div class="miniGrid"><div class="mini"><b>Especialidad</b><br><span>Dulces, salsas, pulpas, paletas y más.</span></div><div class="mini"><b>Canal de atención</b><br><span>WhatsApp comercial.</span></div><div class="mini"><b>Modelo</b><br><span>Cotización rápida y catálogo visual.</span></div></div></div><div><h3>Contacto</h3><p>Escríbenos y te respondemos directamente por WhatsApp.</p><input class="field" id="formName" placeholder="Nombre"><input class="field" id="formPhone" placeholder="Celular"><textarea class="field" id="formMsg" rows="5" placeholder="Mensaje"></textarea><button class="btn blue" onclick="sendContact()">Enviar consulta</button></div></div></section>
+<div class="modal" id="modal"><div class="overlay" onclick="closeModal()"></div><div class="modalCard"><button class="closeBtn" onclick="closeModal()">×</button><div class="modalGrid" id="modalBody"></div></div></div><a class="floating" href="javascript:void(0)" onclick="openWhatsAppGeneral()">✆</a><div class="toast" id="toast"></div>
+<script src="productos.js"></script>
+<script>
+function loadCart() {
+  try {
+    return JSON.parse(localStorage.getItem("guerita_v6_cart") || "{}");
+  } catch (error) {
+    return {};
+  }
+}
+
+const WA = "573224274547";
+const products = window.PRODUCTOS || [];
+const state = {
+  category: null,
+  search: "",
+  sort: "name",
+  cart: loadCart()
+};
+const categories = [...new Set(products.map((product) => product.category))];
+
+const el = (id) => document.getElementById(id);
+const money = (value) => "$" + new Intl.NumberFormat("es-CO").format(value);
+const escapeForSingleQuotedAttr = (value) => value.replace(/\\/g, "\\\\").replace(/'/g, "\\'");
+
+document.addEventListener("contextmenu", (event) => event.preventDefault());
+
+function scrollCatalog() {
+  el("catalogSection").scrollIntoView({ behavior: "smooth" });
+}
+
+function openWhatsAppGeneral() {
+  const message = "Hola, quiero información del catálogo de Alimentos la Güerita.";
+  window.open(`https://wa.me/${WA}?text=${encodeURIComponent(message)}`, "_blank");
+}
+
+function toast(message) {
+  const toastElement = el("toast");
+  toastElement.textContent = message;
+  toastElement.classList.add("show");
+  setTimeout(() => toastElement.classList.remove("show"), 1800);
+}
+
+function init() {
+  if (products[0]) {
+    el("heroImage").src = products[0].image;
+  }
+
+  renderCategoryControls();
+  bindControls();
+  renderCart();
+  renderCatalog();
+}
+
+function bindControls() {
+  el("searchInput").addEventListener("input", (event) => {
+    state.search = event.target.value.toLowerCase().trim();
+    renderCatalog();
+  });
+
+  el("sortSelect").addEventListener("change", (event) => {
+    state.sort = event.target.value;
+    renderCatalog();
+  });
+}
+
+function renderCategoryControls() {
+  el("topCategoryChips").innerHTML = categories.map((category) => {
+    const safeCategory = escapeForSingleQuotedAttr(category);
+    return `<button class="chip ${state.category === category ? "active" : ""}" onclick="selectCategory('${safeCategory}')">${category}</button>`;
+  }).join("");
+
+  el("catList").innerHTML = categories.map((category) => {
+    const safeCategory = escapeForSingleQuotedAttr(category);
+    return `<button class="catBtn ${state.category === category ? "active" : ""}" onclick="selectCategory('${safeCategory}')"><span>${category}</span><span>›</span></button>`;
+  }).join("");
+}
+
+function selectCategory(category) {
+  state.category = category;
+  renderCategoryControls();
+  renderCatalog();
+  scrollCatalog();
+}
+
+function currentProducts() {
+  if (!state.category) {
+    return [];
+  }
+
+  let list = products.filter((product) => product.category === state.category);
+  if (state.search) {
+    list = list.filter((product) => `${product.title} ${product.brand} ${product.category}`.toLowerCase().includes(state.search));
+  }
+
+  if (state.sort === "priceAsc") {
+    list.sort((a, b) => a.price - b.price);
+  } else if (state.sort === "priceDesc") {
+    list.sort((a, b) => b.price - a.price);
+  } else {
+    list.sort((a, b) => a.title.localeCompare(b.title));
+  }
+
+  return list;
+}
+
+function renderCatalog() {
+  if (!state.category) {
+    el("catTitle").textContent = "Selecciona una categoría";
+    el("catDesc").textContent = "Cuando elijas un tipo de producto, aquí se cargarán sus productos.";
+    el("catalogArea").innerHTML = '<div class="empty"><h3 style="margin-top:0">Aún no has elegido un tipo de producto</h3><p>Selecciona una categoría a la izquierda o en la barra superior para mostrar solo esos productos.</p></div>';
+    return;
+  }
+
+  const list = currentProducts();
+  el("catTitle").textContent = state.category;
+  el("catDesc").textContent = `Se muestran ${list.length} producto(s) de la categoría ${state.category}.`;
+
+  if (!list.length) {
+    el("catalogArea").innerHTML = '<div class="empty"><h3 style="margin-top:0">Sin resultados</h3><p>No hay productos para tu búsqueda dentro de esta categoría.</p></div>';
+    return;
+  }
+
+  el("catalogArea").innerHTML = `<div class="grid">${list.map(cardHTML).join("")}</div>`;
+}
+
+function cardHTML(product) {
+  return `<article class="card" onclick="openProduct('${product.sku}')"><div class="imgWrap"><img src="${product.image}" alt="${product.title}"></div><div class="cardBody"><div class="brandLine">${product.brand}</div><div class="title">${product.title}</div><div class="price">${money(product.price)}</div><div class="sub">Precio de venta</div><div class="miniActions"><span class="pill">${product.category}</span></div></div></article>`;
+}
+
+function openProduct(sku) {
+  const product = products.find((item) => item.sku === sku);
+  if (!product) {
+    return;
+  }
+
+  el("modalBody").innerHTML = `<div class="modalMedia"><img src="${product.image}" alt="${product.title}"></div><div class="modalInfo"><div class="modalBrand">${product.brand} • ${product.category}</div><h4>${product.title}</h4><div class="priceBig">${money(product.price)}</div><div class="sub">Precio de venta</div><p style="color:#555;line-height:1.65">${product.description}</p><div class="specs"><div class="spec"><b>SKU</b><span>${product.sku}</span></div><div class="spec"><b>Marca</b><span>${product.brand}</span></div><div class="spec"><b>Categoría</b><span>${product.category}</span></div></div><div class="modalActions"><button class="btn blue" onclick="addToCart('${product.sku}')">Agregar al carrito</button><button class="btn green" onclick="buyNow('${product.sku}')">Cotizar por WhatsApp</button></div></div>`;
+  el("modal").classList.add("open");
+}
+
+function closeModal() {
+  el("modal").classList.remove("open");
+}
+
+function addToCart(sku) {
+  state.cart[sku] = (state.cart[sku] || 0) + 1;
+  saveCart();
+  toast("Producto agregado");
+}
+
+function changeQty(sku, delta) {
+  const nextQuantity = (state.cart[sku] || 0) + delta;
+  if (nextQuantity <= 0) {
+    delete state.cart[sku];
+  } else {
+    state.cart[sku] = nextQuantity;
+  }
+  saveCart();
+}
+
+function clearCart() {
+  state.cart = {};
+  saveCart();
+}
+
+function saveCart() {
+  localStorage.setItem("guerita_v6_cart", JSON.stringify(state.cart));
+  renderCart();
+}
+
+function renderCart() {
+  const entries = Object.entries(state.cart);
+  if (!entries.length) {
+    el("cartItems").innerHTML = '<div class="empty" style="padding:24px 14px"><p style="margin:0">Tu carrito está vacío.</p></div>';
+    el("sumRefs").textContent = "0";
+    el("sumTotal").textContent = money(0);
+    return;
+  }
+
+  let total = 0;
+  let refs = 0;
+
+  el("cartItems").innerHTML = entries.map(([sku, quantity]) => {
+    const product = products.find((item) => item.sku === sku);
+    if (!product) {
+      return "";
+    }
+
+    refs += quantity;
+    total += product.price * quantity;
+
+    return `<div class="cartRow"><img src="${product.image}" alt="${product.title}"><div><div style="font-weight:800;font-size:13px;line-height:1.3">${product.title}</div><div style="color:#666;font-size:12px">${money(product.price)} c/u</div><div class="qtyBox"><button class="qtyBtn" onclick="changeQty('${sku}',-1)">−</button><b>${quantity}</b><button class="qtyBtn" onclick="changeQty('${sku}',1)">+</button></div></div><b>${money(product.price * quantity)}</b></div>`;
+  }).join("");
+
+  el("sumRefs").textContent = refs;
+  el("sumTotal").textContent = money(total);
+}
+
+function buyNow(sku) {
+  addToCart(sku);
+  sendCart();
+}
+
+function sendCart() {
+  const entries = Object.entries(state.cart);
+  if (!entries.length) {
+    toast("Agrega productos al carrito primero");
+    return;
+  }
+
+  const name = el("customerName").value.trim();
+  const notes = el("customerNotes").value.trim();
+  const lines = ["Hola, quiero cotizar estos productos de Alimentos la Güerita:", ""];
+  let total = 0;
+
+  entries.forEach(([sku, quantity], index) => {
+    const product = products.find((item) => item.sku === sku);
+    if (!product) {
+      return;
+    }
+
+    const subtotal = product.price * quantity;
+    total += subtotal;
+    lines.push(`${index + 1}. ${product.title} | Cantidad: ${quantity} | Precio: ${money(product.price)} | Subtotal: ${money(subtotal)}`);
+  });
+
+  lines.push("", "Total estimado: " + money(total));
+  if (name) {
+    lines.push("Nombre: " + name);
+  }
+  if (notes) {
+    lines.push("Notas: " + notes);
+  }
+
+  window.open(`https://wa.me/${WA}?text=${encodeURIComponent(lines.join("\n"))}`, "_blank");
+}
+
+function sendContact() {
+  const name = el("formName").value.trim();
+  const phone = el("formPhone").value.trim();
+  const message = el("formMsg").value.trim();
+  const lines = [
+    "Hola, quiero comunicarme con Alimentos la Güerita.",
+    name ? "Nombre: " + name : null,
+    phone ? "Celular: " + phone : null,
+    message ? "Mensaje: " + message : null
+  ].filter(Boolean);
+
+  window.open(`https://wa.me/${WA}?text=${encodeURIComponent(lines.join("\n"))}`, "_blank");
+}
+
+init();
+</script>
+</body></html>
